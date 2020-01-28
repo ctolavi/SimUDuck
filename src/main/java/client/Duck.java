@@ -1,8 +1,13 @@
+package client;
+
+import fly.FlyBehavior;
+import quack.QuackBehavior;
+
 public abstract class Duck {
 
-    FlyBehavior flyBehavior;
+    protected FlyBehavior flyBehavior;
 
-    QuackBehavior quackBehavior;
+    protected QuackBehavior quackBehavior;
 
     public Duck() {
     }

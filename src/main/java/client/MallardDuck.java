@@ -1,4 +1,9 @@
-public class MallardDuck extends Duck{
+package client;
+
+import fly.FlyWithWings;
+import quack.Quack;
+
+public class MallardDuck extends Duck {
 
     public MallardDuck() {
         quackBehavior = new Quack();

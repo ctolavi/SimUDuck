@@ -1,3 +1,8 @@
+package client;
+
+import fly.FlyNoWay;
+import quack.Quack;
+
 public class ModelDuck extends Duck {
 
     public ModelDuck() {
@@ -6,6 +11,6 @@ public class ModelDuck extends Duck {
     }
 
     public void display() {
-
+        System.out.println("looks like a model duck");
     }
 }
