@@ -1,4 +1,4 @@
-public class RedheadDuck extends Duck implements Flyable, Quackable{
+public class RedheadDuck extends Duck implements FlyBehavior, QuackBehavior {
 
     void display() {
         System.out.println("looks like a redhead");
