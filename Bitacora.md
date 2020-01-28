@@ -1,0 +1,12 @@
+# Bitacora
+
+El proyecto consta de 10 commits que no necesariamente son 10 "versiones" de la applicacion. En este documento registrare impresiones de las diferentes etapas/versiones de la applicacion.
+
+  - **Primera etapa**: programa funcional para los requerimientos iniciales, al parecer el programa no esta mal usa uno de los pilares de POO que es la herencia y transmite "identidad" de que si bien hay 2 tipos de patos ambos son en escencia lo mismo "Patos".
+  - **Segunda etapa**: Agregando la funcionalidad de volar. en este punto inician los problemas ya sea por la interpretacion del desarrollador o por asumir que todos deberian de tener la funcionalidad de volar, para una segunda implementacion podria estar bien si hubiese usado directamente interfaces asi no introduciamos el bicho de que todos los patos puedan volar. ademas vemos los primeros indicios de que la herencia es mala para propogar comportamiento y es por esto que con interfaces se podria haber encontrado una solucion mas mantenible.
+  - **Tercera etapa**: Agregando mas tipos de patos. si bien es verdad que todos los programas pueden crecer de forma inimaginable es complicado creer/pedir que el desarrollador diseñe el software para 100 tipos de patos cuando el primer requerimiento fue implementar 2. es parte de la evolucion misma del software entender en que momento necesitamos suluciones mas robustas y al tener 2 nuevos tipos de patos es claro que lo solucion que en su tiempo funciono(herencia) ya no es mantenible y tenemos que estar muy involucrados en la implementacion interna rompiendo asi con principios como la cohecion y acoplamiento.
+  - **Cuarta etapa**: Usando composicion y delegacion. esta es una solucion mucho mas flexible ya que esta tecnica se basa en varios patrones de diseño como "command", "strategy" o "decorator". mostrandonos la posiblidad de implementar una solucion que no viole principios como DRY o rompa con conceptos como cohecion y acoplamiento. 
+# Conclucion.
+Si bien la herencia es un pilar de la POO. tenemos que conocer sus ventajas y limitaciones para aprovechar al maximo su uso en los momentos y lugares indicados.
+
+En cuanto al sistema. podriamos seguir trabajando en esta applicacion para no usar la palabra new como lo estamos haciendo actualmente para "testear" la implementacion usando patrones de diseño como un factory o implementar el uso de un framework de inyeccion de dependencias para tener la solucion mas flexible y robusta posible. 
