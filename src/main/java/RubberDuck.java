@@ -1,6 +1,6 @@
 public class RubberDuck extends Duck implements QuackBehavior {
 
-    void display() {
+    public void display() {
         System.out.println("looks like a rubberduck");
     }
 

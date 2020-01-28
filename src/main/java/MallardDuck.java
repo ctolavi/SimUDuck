@@ -1,14 +1,12 @@
-public class MallardDuck extends Duck implements FlyBehavior, QuackBehavior {
+public class MallardDuck extends Duck{
 
-    void display() {
+    public MallardDuck() {
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
+
+    public void display() {
         System.out.println("looks like a mallard");
     }
 
-    public void fly() {
-        System.out.println("fly like a MalllardDuck");
-    }
-
-    public void quack() {
-        System.out.println("quack like a MalllardDuck");
-    }
 }

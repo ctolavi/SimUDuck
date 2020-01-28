@@ -1,21 +1,23 @@
-abstract class Duck {
+public abstract class Duck {
 
     FlyBehavior flyBehavior;
 
     QuackBehavior quackBehavior;
 
-    void swim() {
-        System.out.println("swim");
+    public Duck() {
     }
 
-    void performQuack() {
-        quackBehavior.quack();
-    }
+    public abstract void display();
 
     public void performFly() {
         flyBehavior.fly();
     }
 
-    abstract void display();
+    public void performQuack() {
+        quackBehavior.quack();
+    }
 
+    public void swim() {
+        System.out.println("All ducks float, even decoys!");
+    }
 }

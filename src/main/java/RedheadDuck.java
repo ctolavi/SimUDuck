@@ -1,6 +1,6 @@
 public class RedheadDuck extends Duck implements FlyBehavior, QuackBehavior {
 
-    void display() {
+    public void display() {
         System.out.println("looks like a redhead");
     }
 
